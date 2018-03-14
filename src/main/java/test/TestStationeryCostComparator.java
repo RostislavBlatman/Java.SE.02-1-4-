@@ -14,8 +14,8 @@ import static junit.framework.TestCase.assertEquals;
 
 public class TestStationeryCostComparator {
 
-    StationeryCostComparator comp;
-    ArrayList<AbstractStationery> array;
+    private StationeryCostComparator comp;
+    private ArrayList<AbstractStationery> array;
 
     @Before
     public void setUp() {
@@ -23,7 +23,6 @@ public class TestStationeryCostComparator {
         array = new ArrayList<>();
         array.add(new Pen(125));
         array.add(new Pen(1));
-
     }
 
     @Test

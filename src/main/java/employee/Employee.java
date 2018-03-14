@@ -13,8 +13,8 @@ public class Employee {
     }
     public int getSumCost() {
         int sum = 0;
-        for (int index = 0; index < stationery.length; index++) {
-            sum += stationery[index].getCost();
+        for (AbstractStationery cost : stationery) {
+            sum += cost.getCost();
         }
         return sum;
         }

@@ -5,7 +5,7 @@ import main.java.stationery.pen.Pen;
 import main.java.stationery.pencil.Pencil;
 import main.java.stationery.straightedge.Straightedge;
 
-public class Professional {
+public class Professional implements SetsInterface {
     private AbstractStationery[] set;
 
     public Professional(){
