@@ -1,4 +1,4 @@
-package main.java.test;
+package test.java;
 
 import main.java.stationery.pen.Pen;
 import org.junit.Before;

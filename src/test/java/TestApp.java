@@ -1,4 +1,4 @@
-package main.java.test;
+package test.java;
 
 import main.java.application.App;
 import main.java.stationery.AbstractStationery;

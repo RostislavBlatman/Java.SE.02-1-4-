@@ -1,9 +1,9 @@
-package main.java.test;
+package test.java;
 
-import main.java.comparator.StationeryCostComparator;
 import main.java.comparator.StationeryNameComparator;
 import main.java.stationery.AbstractStationery;
 import main.java.stationery.pen.Pen;
+import main.java.stationery.straightedge.Straightedge;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,22 +12,24 @@ import java.util.Collections;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class TestStationeryCostComparator {
+public class TestStationeryNameComparator {
 
-    private StationeryCostComparator comp;
-    private ArrayList<AbstractStationery> array;
+    StationeryNameComparator comp;
+    ArrayList<AbstractStationery> array;
 
     @Before
     public void setUp() {
-        comp = new StationeryCostComparator();
+        comp = new StationeryNameComparator();
         array = new ArrayList<>();
-        array.add(new Pen(125));
-        array.add(new Pen(1));
+        array.add(new Straightedge());
+        array.add(new Pen());
+
     }
 
     @Test
-    public void testForCompareByCost(){
+    public void testForCompareByName(){
         Collections.sort(array, comp);
-        assertEquals(array.get(0).getCost(),1);
+        assertEquals(array.get(0).getName(),"Pen");
     }
+
 }
